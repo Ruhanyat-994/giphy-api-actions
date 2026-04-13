@@ -14,7 +14,7 @@ gif_url=$(echo "$giphy_response" | jq --raw-output .data.images.downsized.url)
 echo GIPHY_URL - $gif_url
 
 comment_response=$(curl -sX POST -H "Authorization: token $GITHUB_TOKEN" \
-    -H "Accept: application/vnd.gihub.v3+json" \
+    -H "Accept: application/vnd.github.v3+json" \
     -d "{
     \"body\": \"### PR #$pull_request_number\n### Thank you for this contribution! \n![GIF]($gif_url)\"
   }" \
@@ -22,4 +22,3 @@ comment_response=$(curl -sX POST -H "Authorization: token $GITHUB_TOKEN" \
 
   comment_url=$(echo "$comment_response" | jq --raw-output .html_url)
 
-  
