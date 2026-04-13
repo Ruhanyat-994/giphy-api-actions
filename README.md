@@ -107,3 +107,4 @@ Add the following secrets to your repository:
 * `GITHUB_TOKEN` (automatically available in GitHub Actions)
 * `GIPHY_API_KEY` (from Giphy Developers portal)
 
+
