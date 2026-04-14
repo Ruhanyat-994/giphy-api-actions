@@ -21,6 +21,10 @@ jobs:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
                   giphy-api-key: ${{ secrets.GIPHY_API_KEY }}
 
+            - name: Checking Commands
+              run: | 
+                  echo "This is for checking purpose ....."
+                  
 
 
 
