@@ -5,7 +5,7 @@ on:
 
 jobs:
     testing-actions:
-        runs-on: ubuntu-latest
+        runs-on: [ self-hosted,Linux,X64,prod,main ]
         permissions: 
             issues: write
             pull-requests: write
